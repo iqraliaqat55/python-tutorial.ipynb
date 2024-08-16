@@ -1,0 +1,262 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "1OgtWuWckQRL3RAn82gEGh9VaUC5cZMrj",
+      "authorship_tag": "ABX9TyOw1gdQPSfAJMXRSIw3hmby",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/iqraliaqat55/python-tutorial.ipynb/blob/main/Control%20flow%20in%20Python%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Control flow in Python**"
+      ],
+      "metadata": {
+        "id": "ddM3w7r59Tw6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Control flow in Python allows you to dictate the order in which your code executes, based on conditions, loops, and other logical structures. Understanding control flow is fundamental to writing effective Python programs. Below is a detailed explanation of the key control flow structures in Python:**"
+      ],
+      "metadata": {
+        "id": "UeBklnUv9v7l"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1. Conditional Statements**"
+      ],
+      "metadata": {
+        "id": "oXKEeev990sQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Conditional statements in Python allow you to execute certain code blocks only if specific conditions are met. The most common conditional statements are if, elif, and else."
+      ],
+      "metadata": {
+        "id": "xucJI8il974Y"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1.1 if Statement**"
+      ],
+      "metadata": {
+        "id": "WegmCHGS9_1Q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q_sWvJWO6K3A",
+        "outputId": "b1708412-2e57-4a27-9e08-57b8d7150dd4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is greater than 5\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Example of an if statement\n",
+        "x = 10\n",
+        "if x > 5:\n",
+        "    print(\"x is greater than 5\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Explanation:**\n",
+        "\n",
+        "The code checks if x is greater than 5. Since x is 10, the condition is True, and the message is printed."
+      ],
+      "metadata": {
+        "id": "h8fKn7bd-LMY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1.2 else Statement**"
+      ],
+      "metadata": {
+        "id": "GtU7z2R6-NkB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Example of an if-else statement\n",
+        "x = 3\n",
+        "if x > 5:\n",
+        "    print(\"x is greater than 5\")\n",
+        "else:\n",
+        "    print(\"x is not greater than 5\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W6cGnUat-RyT",
+        "outputId": "41452ac6-7b00-40a6-f7c9-e2963976217f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is not greater than 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Explanation:**\n",
+        "\n",
+        "Since x is 3, the if condition is False, so the code inside the else block is executed."
+      ],
+      "metadata": {
+        "id": "D7IDmZXO-X-X"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1.3 elif Statement**"
+      ],
+      "metadata": {
+        "id": "44O3LEwJ-65O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Example of if-elif-else statement\n",
+        "x = 7\n",
+        "if x > 10:\n",
+        "    print(\"x is greater than 10\")\n",
+        "elif x == 7:\n",
+        "    print(\"x is equal to 7\")\n",
+        "else:\n",
+        "    print(\"x is less than 10 and not equal to 7\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2F8eydoz-aYf",
+        "outputId": "060cf2f9-9f65-4b04-bf53-694d455c26e1"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is equal to 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Explanation:\n",
+        "\n",
+        "The elif statement checks if x is equal to 7. Since it is, the corresponding message is printed."
+      ],
+      "metadata": {
+        "id": "DMBGFgQl_DRP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1.4 Nested if Statements**"
+      ],
+      "metadata": {
+        "id": "N1VoLEkr_Gf-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Example of nested if statements\n",
+        "x = 15\n",
+        "if x > 10:\n",
+        "    if x < 20:\n",
+        "        print(\"x is between 10 and 20\")\n",
+        "    else:\n",
+        "        print(\"x is greater than or equal to 20\")\n",
+        "else:\n",
+        "    print(\"x is 10 or less\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1vob-Uzc_IED",
+        "outputId": "f31b01a9-614b-4750-ec01-76f75e88284e"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is between 10 and 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Explanation:\n",
+        "\n",
+        "The outer if checks if x is greater than 10, and then the nested if checks if x is less than 20."
+      ],
+      "metadata": {
+        "id": "bbLzWsBT_MRP"
+      }
+    }
+  ]
+}
